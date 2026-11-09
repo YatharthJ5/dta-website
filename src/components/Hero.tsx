@@ -51,7 +51,7 @@ export default function Hero() {
               <circle cx="50" cy="50" r="49" fill="none" stroke="#c48a1a" strokeWidth=".35" pathLength={1} className="ring-draw" />
               <g className="ring-spin"><circle cx="50" cy="50" r="46.6" fill="none" stroke="#c48a1a" strokeWidth=".35" strokeDasharray="0.4 2.2" strokeLinecap="round" opacity=".7" /></g>
             </svg>
-            <img src={logo} alt="D.T.A. Delhi Teaching Academy official logo — Learn Today, Lead Tomorrow" width="1254" height="1254" fetchPriority="high"
+            <img src={logo} alt="D.T.A. Delhi Teaching Academy official logo — Learn Today, Lead Tomorrow" width="1254" height="1254" {...{ fetchpriority: 'high' }}
               className="hero-in relative w-full" style={{ ['--d' as string]: '300ms' }} />
           </div>
         </div>

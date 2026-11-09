@@ -28,13 +28,14 @@ Alternative (manual): run `npm run build` and publish the contents of `dist/`.
 | What | File |
 |---|---|
 | Phone, email, address, courses, faculty, FAQ, admission steps | `src/data/site.ts` |
+| Free Education Initiative | `src/components/FreeEducation.tsx` |
 | Learning-environment panels / real photos | `src/data/environment.ts` |
 | Results & achievements (empty until verified data exists) | `RESULTS` array in `src/components/Results.tsx` |
-| Faculty photographs | `src/assets/aditya-pandey.jpg`, `src/assets/adarsh.jpg` |
+| Faculty photographs | `src/assets/aditya-pandey.jpg`, `src/assets/adarsh-pandey-sir.png` |
 | Logo / favicon | `src/assets/dta-logo.jpg`, `public/favicon*.png`, `public/og-image.jpg` |
 | Colours & fonts | `@theme` block in `src/index.css` |
 
-Photo mapping: first supplied photograph = Aditya Pandey Sir (Science); second = Adarsh Sir (Mathematics).
+Photo mapping: `aditya-pandey.jpg` = Aditya Pandey Sir (Science); `adarsh-pandey-sir.png` = Adarsh Pandey Sir (Mathematics).
 
 ## Enquiry form
 There is no backend. The form validates input, then opens **WhatsApp** (+91 7011194901) with a prefilled message, or the visitor's email app. Nothing is stored and nothing is sent automatically. To use a form service later, replace the `submit` function in `src/components/Contact.tsx`.
@@ -44,6 +45,6 @@ There is no backend. The form validates input, then opens **WhatsApp** (+91 7011
 - Confirm the email spelling `dtadelhiteachingacadmy6316@gmail.com` (as supplied, "acadmy").
 - Verified results, toppers and testimonials (none published).
 - Real photographs of the classrooms and labs.
-- Verified Google Maps embed (currently an "Open in Google Maps" link using the address).
-- Social media links (none provided, none shown).
+- Google Maps is embedded in the Contact section using the institute address; the directions link opens Google Maps.
+- Instagram: [@d.t.a_26](https://www.instagram.com/d.t.a_26/).
 - Director's photograph, if desired.

@@ -21,6 +21,7 @@ const P: Record<string, string> = {
   menu: 'M4 7h16M4 12h16M4 17h16',
   close: 'M6 6l12 12M18 6 6 18',
   arrow: 'M5 12h14M13 6l6 6-6 6',
+  instagram: 'M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4ZM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8ZM17.5 6.5h.01',
 }
 
 export default function Icon({ name, className = 'h-6 w-6' }: { name: string; className?: string }) {

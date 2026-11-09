@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { FormEvent, ReactNode } from 'react'
-import { DEMO_MSG, MAPS_EMBED_LINK, MAPS_LINK, SITE, waLink } from '../data/site'
+import { DEMO_MSG, INSTAGRAM_LINK, MAPS_EMBED_LINK, MAPS_LINK, SITE, waLink } from '../data/site'
 import Section, { Heading } from './Section'
 import Reveal from './Reveal'
 import Icon from './Icon'
@@ -67,6 +67,7 @@ export default function Contact() {
             <Row icon="phone" label="Additional phone" href={`tel:${SITE.phoneSecondaryTel}`}>{SITE.phoneSecondary}</Row>
             <Row icon="wa" label="WhatsApp" href={waLink('Hello D.T.A., I would like to know more about the academy.')} ext>{SITE.phonePrimary}</Row>
             <Row icon="mail" label="Email" href={`mailto:${SITE.email}`}>{SITE.email}</Row>
+            <Row icon="instagram" label="Instagram" href={INSTAGRAM_LINK} ext>@d.t.a_26</Row>
           </div>
           <div className="mt-6 rounded-2xl bg-navy-900 p-6 text-cream-100">
             <h3 className="text-2xl font-medium">Want to see a class first?</h3>

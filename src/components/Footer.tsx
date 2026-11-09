@@ -1,4 +1,5 @@
-import { NAV, SITE, waLink } from '../data/site'
+import { INSTAGRAM_LINK, NAV, SITE, waLink } from '../data/site'
+import Icon from './Icon'
 import logo from '../assets/dta-logo.jpg'
 
 export default function Footer() {
@@ -16,6 +17,7 @@ export default function Footer() {
           <p><a className="hover:text-white" href={`tel:${SITE.phonePrimaryTel}`}>{SITE.phonePrimary}</a> · <a className="hover:text-white" href={`tel:${SITE.phoneSecondaryTel}`}>{SITE.phoneSecondary}</a></p>
           <p><a className="break-all hover:text-white" href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
           <p><a className="hover:text-white" href={waLink()} target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
+          <p><a className="inline-flex min-h-11 items-center gap-2 hover:text-white" href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer"><Icon name="instagram" className="h-5 w-5 text-gold-400" />Follow D.T.A. on Instagram</a></p>
         </div>
       </div>
       <p className="mx-auto mt-10 max-w-7xl border-t border-white/10 px-5 pt-6 text-sm text-cream-100/60 sm:px-8">© {new Date().getFullYear()} {SITE.name} — {SITE.fullName}. All rights reserved.</p>

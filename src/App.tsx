@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Highlights from './components/Highlights'
 import About from './components/About'
+import FreeEducation from './components/FreeEducation'
 import Courses from './components/Courses'
 import Faculty from './components/Faculty'
 import Why from './components/Why'
@@ -23,6 +24,7 @@ export default function App() {
         <Hero />
         <Highlights />
         <About />
+        <FreeEducation />
         <Courses />
         <Faculty />
         <Why />

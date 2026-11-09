@@ -23,12 +23,14 @@ export const waLink = (text?: string) =>
 export const MAPS_LINK =
   'https://www.google.com/maps?q=B-44%2C+Amar+Vihar%2C+Karawal+Nagar%2C+Delhi+110094'
 export const MAPS_EMBED_LINK = `${MAPS_LINK}&output=embed`
+export const INSTAGRAM_LINK = 'https://www.instagram.com/d.t.a_26/'
 
 export const DEMO_MSG =
   'Hello D.T.A. — Delhi Teaching Academy, I would like to book a free demo class. Please share the details.'
 
 export const NAV = [
   { label: 'About', href: '#about' },
+  { label: 'Free Education', href: '#free-education' },
   { label: 'Courses', href: '#courses' },
   { label: 'Faculty', href: '#faculty' },
   { label: 'Why D.T.A.', href: '#why' },

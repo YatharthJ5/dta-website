@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NAV, SITE } from '../data/site'
+import { INSTAGRAM_LINK, NAV, SITE } from '../data/site'
 import Icon from './Icon'
 import logo from '../assets/dta-logo.jpg'
 
@@ -41,14 +41,18 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-2 lg:flex xl:gap-6" aria-label="Primary">
           {NAV.map((n) => (
-            <a key={n.href} href={n.href} className="group relative py-1 text-[15px] font-medium text-navy-900">
+            <a key={n.href} href={n.href} className="group relative py-1 text-[13px] font-medium text-navy-900 xl:text-[15px]">
               {n.label}
               <span className="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 bg-gold-500 transition-transform duration-300 group-hover:scale-x-100" />
             </a>
           ))}
-          <a href="#contact" className="btn btn-navy !min-h-[42px] !px-5">Enquire Now</a>
+          <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" aria-label="Follow D.T.A. on Instagram" title="Instagram"
+            className="grid h-11 w-11 shrink-0 place-items-center rounded-full text-navy-900 transition-colors hover:bg-cream-200/70 hover:text-gold-500">
+            <Icon name="instagram" className="h-5 w-5" />
+          </a>
+          <a href="#contact" className="btn btn-navy !min-h-[42px] !px-3 xl:!px-5">Enquire Now</a>
         </nav>
 
         <button className="grid h-12 w-12 place-items-center rounded-full text-navy-900 lg:hidden" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? 'Close menu' : 'Open menu'} onClick={() => setOpen(!open)}>
@@ -64,6 +68,10 @@ export default function Header() {
               {n.label}
             </a>
           ))}
+          <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}
+            className="mt-4 inline-flex min-h-12 items-center gap-3 self-start rounded-full border border-gold-400/50 px-5 font-semibold text-cream-100 transition-colors hover:bg-white/10">
+            <Icon name="instagram" className="h-5 w-5 text-gold-400" /> Follow D.T.A. on Instagram
+          </a>
           <a href="#contact" onClick={() => setOpen(false)} className="btn btn-gold mt-8">Enquire for Admission</a>
         </nav>
       </div>
